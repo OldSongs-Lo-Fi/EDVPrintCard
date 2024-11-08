@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 800;
+    src: url("/fonts/Raleway/static/Raleway-ExtraBold.ttf") format("opentype");
+}
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    src: url("/fonts/Raleway/static/Raleway-Medium.ttf") format("opentype");
+}
+
+
+@font-face {
+    font-family: 'Roboto Condenced';
+    font-weight: 400;
+    src: url("/fonts/Roboto_Condensed/static/RobotoCondensed-Regular.ttf") format("opentype");
+}
+
+a {
+    color: inherit; /* Убираем цвет ссылки, чтобы он наследовал цвет родительского элемента */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    cursor: auto; /* Меняем курсор на обычный, убирая эффект "указателя" */
+}
+
+a:hover {
+    color: inherit; /* При наведении сохраняем тот же цвет */
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+a:visited {
+    color: inherit; /* Убираем изменение цвета для посещенных ссылок */
+}
+
+a:active {
+    color: inherit; /* Убираем изменение цвета для активных ссылок */
+}
