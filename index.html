@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/carusel.css">
 </head>
 <body style="margin: 0">
 
@@ -57,6 +58,25 @@
     </div>
 </div>
 
+<div class="col" style="margin-bottom: 100px">
+    <h1 style="align-self: center">Приклади наших робіт</h1>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://asset.gecdesigns.com/img/wallpapers/beautiful-fantasy-wallpaper-ultra-hd-wallpaper-4k-sr10012418-1706506236698-cover.webp" alt="Image 1">
+            <img src="https://pibig.info/uploads/posts/2022-12/1669915626_1-pibig-info-p-oboi-na-rabochii-stol-mak-instagram-1.jpg" alt="Image 2">
+            <img src="https://images3.alphacoders.com/135/1350069.jpeg" alt="Image 3" >
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</div>
+
+<div class="col">
+    <h1>Ліцензія @License</h1>
+</div>
+
+
+
 <div class="col" style="background: rgba(250,235,215,0.8)">
     <h1 style="align-self: center">Наші контакти</h1>
     <div class="footer row" style="width: inherit; justify-content: space-between; padding: 20px">
@@ -76,5 +96,6 @@
     </div>
 </div>
 
+<script src="js/carusel.js"></script>
 </body>
 </html>
