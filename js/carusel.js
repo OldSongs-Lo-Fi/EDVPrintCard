@@ -19,7 +19,6 @@ function changeSlide(direction) {
     // Сдвигаем контейнер с изображениями
     document.querySelectorAll('.carousel-images img').forEach(img => img.style.display = 'none');
     document.querySelectorAll('.carousel-images img')[currentIndex].style.display = 'block';
-    console.log(currentIndex);
 }
 
 // Автоматическое переключение слайдов каждые 3 секунды
