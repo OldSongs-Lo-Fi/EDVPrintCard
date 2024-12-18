@@ -4,8 +4,6 @@ function changeSlide(direction) {
     const slides = document.querySelectorAll('.carousel-images img');
     const totalSlides = slides.length;
 
-    const imageSize = document.querySelector('.carousel-images img').offsetWidth;
-
     // Обновляем индекс с учетом направления
     currentIndex = currentIndex + direction;
 
@@ -17,7 +15,9 @@ function changeSlide(direction) {
     }
 
     // Сдвигаем контейнер с изображениями
-    document.querySelector('.carousel-images').style.transform = `translateX(-${currentIndex * imageSize}px)`;
+    document.querySelectorAll('.carousel-images img').forEach(img => img.style.display = 'none');
+    document.querySelectorAll('.carousel-images img')[currentIndex].style.display = 'block';
+    console.log(currentIndex);
 }
 
 // Автоматическое переключение слайдов каждые 3 секунды

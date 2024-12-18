@@ -68,3 +68,40 @@ p{
     background-color: rgba(250,235,215,0.8);
     border: 2px solid #0a053e;
 }
+
+.link{
+    text-decoration: underline; /* Подчеркивание текста */
+    font-style: italic;         /* Курсивный шрифт */
+    font-size: x-large;
+}
+
+.footer{
+    font-size: x-large;
+}
+
+.relational{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px){
+    .relational{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .relational-row{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+
+}

@@ -1,22 +1,26 @@
 .carousel {
     position: relative;
-    max-width: 800px;
+    max-width: 700px;
 
     margin: auto;
     overflow: hidden;
+    width: 100%;
+    background: #e1dcd6;
 }
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ease;
-    /*width: 300%; /* Учитываем, что есть 3 изображения */
-    width: 1500px;
-    height: 500px;
+    width: 100%;
+    height: 400px;
 }
 
 .carousel img {
     width: inherit; /* Изображения растягиваются на всю ширину контейнера */
+    display: none;
+    object-fit: contain;
 }
+
+
 
 .prev, .next {
     position: absolute;
@@ -37,3 +41,4 @@
 .next {
     right: 10px;
 }
+
