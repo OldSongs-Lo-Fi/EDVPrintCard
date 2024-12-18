@@ -1,5 +1,7 @@
 let currentIndex = 0;
 
+changeSlide(0);
+
 function changeSlide(direction) {
     const slides = document.querySelectorAll('.carousel-images img');
     const totalSlides = slides.length;
