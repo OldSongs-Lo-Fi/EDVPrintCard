@@ -84,7 +84,7 @@ p{
     flex-direction: row;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     .relational{
         display: flex;
         flex-direction: column;
